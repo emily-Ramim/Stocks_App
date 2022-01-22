@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>query results</title>
+        <style>
+    body{
+    background-color: cornflowerblue;
+    color: green;
+    font-family: Copperplate;
+}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+</head>
+<body>
+
+//question one table will be here
+<table  border="1" style="margin-left: 300px">
+    <th>Generation</th>
+    <th>Name</th>
+    {% for content in query1 %}
+    <tr>
+        <td>{{content.tdate}}</td>
+        <td>{{content.ID}}</td>
+        <td>{{content.Symbol}}</td>
+        <td>{{content.bquantity}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+
+</body>
+</html>
